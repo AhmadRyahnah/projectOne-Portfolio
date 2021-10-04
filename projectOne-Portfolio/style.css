@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* navbar */
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.nav-list ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list ul li {
+    font-size: 1.1rem;
+}
+
+.nav-list ul li a {
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a:hover {
+    border-bottom: 2px solid rgb(51, 131, 168);
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    padding-right: 200px;
+}
+
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('bg1.jpg') no-repeat center center/cover;
+    height: 750px;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+}
+
+#home .heading {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    -webkit-text-stroke: rgb(51, 131, 168) 0.1vw;
+    text-align: center;
+}
+
+#home .heading1 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    -webkit-text-stroke: rgb(51, 131, 168) 0.1vw;
+}
+
+.heading {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.heading1 {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+
+/* Portfolio Section */
+
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc;
+}
+
+#portfolio h1 {
+    margin: 60px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 700px;
+    height: 640px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.gallery img:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+
+/* Education Section */
+
+#education {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc;
+}
+
+#education h1 {
+    margin: 60px;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    padding-left: 30px;
+    gap: 25px;
+}
+
+.box {
+    height: 200px;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 30px;
+    padding: 20px;
+}
+
+.box:hover {
+    background-color: rgb(85, 82, 82);
+    cursor: pointer;
+}
+
+.box h2 {
+    color: rgb(74, 198, 214);
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.box p {
+    color: white;
+    font-size: 1.1rem;
+}
+
+
+/* Testmonial Section*/
+
+#testmonial {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc;
+    padding-bottom: 80px;
+}
+
+#testmonial h1 {
+    margin: 60px;
+    padding-top: 60px;
+}
+
+.testmonialAll {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.test {
+    height: 400px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin: 10px;
+    padding: 20px;
+}
+
+.test:hover {
+    background-color: rgb(85, 82, 82);
+    cursor: pointer;
+}
+
+.test img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 152px;
+    margin-top: 10px;
+}
+
+.test h5 {
+    color: rgb(74, 198, 214);
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.test h4 {
+    color: rgb(74, 198, 214);
+    font-size: 1.7rem;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.test p {
+    font-family: 'Comic Neue', cursive;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+/* About Section */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+}
+
+#about h1 {
+    color: black;
+    margin: 55px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.about img {
+    width: 300px;
+    height: 200px;
+    padding-left: 100px;
+    margin-bottom: 25px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    text-align: justify;
+    font-family: 'Comic Neue', cursive;
+    padding: 50px;
+}
+
+.name h4 {
+    padding-left: 50px;
+    text-align: start;
+    font-size: 1.5rem;
+}
+
+.name h2 {
+    padding-left: 50px;
+    text-align: start;
+    font-size: 2rem;
+}
+
+
+/* Contact Section */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc;
+}
+
+#contact h1 {
+    margin: 50px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    padding: 15px 20px;
+    margin: 15px;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+}
+
+#message {
+    margin: 15px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#submit {
+    padding: 15px 20px;
+    margin: 30px;
+    width: 15%;
+    border-radius: 20px;
+    background-color: rgb(103, 149, 160);
+    color: white;
+    border: none;
+    outline: none;
+}
+
+#submit:hover {
+    background-color: rgb(67, 136, 155);
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+.icon {
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 40% auto auto auto 33%;
+    grid-template-rows: auto auto;
+}
+
+.face {
+    font-size: 2.5em;
+    grid-column: 2;
+    grid-row: 2;
+    color: white;
+}
+
+.face a {
+    text-decoration: none;
+    color: rgb(103, 149, 160);
+}
+
+.git {
+    color: white;
+    font-size: 2.5em;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.git a {
+    text-decoration: none;
+    color: rgb(103, 149, 160);
+}
+
+.linked {
+    color: white;
+    font-size: 2.5em;
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.linked a {
+    text-decoration: none;
+    color: rgb(103, 149, 160);
+}
+
+footer {
+    background-color: rgb(88, 84, 84);
+    display: grid;
+    grid-template-columns: 25% 10% 20% 30% 1fr;
+    padding: 20px;
+}
+
+footer p {
+    font-family: 'Comic Neue', cursive;
+    color: white;
+}

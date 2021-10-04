@@ -1,0 +1,117 @@
+/* Boxes */
+
+.nav-list ul li a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    padding: 0;
+    height: 50px;
+    width: 50px;
+}
+
+.gallery img {
+    width: 630px;
+    height: 640px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.columns {
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+.box {
+    height: 200px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.box h2 {
+    color: rgb(74, 198, 214);
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.box p {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.testmonialAll {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.test {
+    height: 400px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin: 20px;
+    padding: 20px;
+}
+
+.test:hover {
+    background-color: rgb(85, 82, 82);
+    cursor: pointer;
+}
+
+.test img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 152px;
+    margin-top: 10px;
+}
+
+.test h5 {
+    color: rgb(74, 198, 214);
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.test h4 {
+    color: rgb(74, 198, 214);
+    font-size: 1.7rem;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.test p {
+    font-family: 'Comic Neue', cursive;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.icon {
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 33% auto auto auto 20%;
+    grid-template-rows: auto auto;
+}
+
+footer {
+    background-color: rgb(88, 84, 84);
+    display: flex;
+    flex-direction: column;
+}
+
+footer p {
+    font-family: 'Comic Neue', cursive;
+    color: white;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
